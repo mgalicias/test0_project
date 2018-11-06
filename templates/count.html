@@ -1,0 +1,24 @@
+<h1>Contando palablas!</h1>
+<h2>Lo pasado es: </h2>
+{{fulltext}}
+<h3>tiene {{count}} palabras </h3>
+
+<form action="{%url 'home'%}" >
+        
+    <br/>
+    <input type="submit" value="Back!" />
+    
+</form>
+
+<h3>Contando Lista: </h3>
+
+{{dictionarycount}}
+
+<br/>
+<br/>
+
+
+{% for w,i in dictionarycount %}
+{{w}} {{i}}
+<br/>
+{% endfor %}
